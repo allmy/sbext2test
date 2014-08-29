@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <linux/fs.h>
 #include </usr/include/ext2fs/ext2_fs.h>
-#include </usr/include/linux/magic.h> para reconocer el fs */
+#include </usr/include/linux/magic.h> 		/* para reconocer el fs */
 
 /*---------------------------------------------------------------------------*/
 /*---------------------- Super block parsing function -----------------------*/
@@ -137,7 +137,7 @@ int analize_sb(char *volume)
 		"Nivel de revision");
 }
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	char *volume = argv[1];
 	return 0;
