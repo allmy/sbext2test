@@ -13,6 +13,7 @@
 
 int analize_sb(char *volume)
 {
+	printf("DEBUG %s\n", volume);
 	struct ext2_super_block es;
 	int f;
 	char free[1024];
@@ -140,5 +141,6 @@ int analize_sb(char *volume)
 int main(int argc, char *argv[])
 {
 	char *volume = argv[1];
+	printf("DEBUG %s\n", volume);
 	return 0;
 }
