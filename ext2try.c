@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <linux/fs.h>
 #include </usr/include/ext2fs/ext2_fs.h>
-#include <linux/include/uapi/linux/magic.h> /* para reconocer el fs */
+#include </usr/include/linux/magic.h> para reconocer el fs */
 
 /*---------------------------------------------------------------------------*/
 /*---------------------- Super block parsing function -----------------------*/
