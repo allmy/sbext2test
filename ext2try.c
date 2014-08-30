@@ -142,5 +142,6 @@ int main(int argc, char *argv[])
 {
 	char *volume = argv[1];
 	printf("DEBUG %s\n", volume);
+	analize_sb(volume);
 	return 0;
 }
