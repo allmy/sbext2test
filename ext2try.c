@@ -11,7 +11,7 @@
 /*---------------------- Super block parsing function -----------------------*/
 /*---------------------------------------------------------------------------*/
 
-int analize_sb(char *volume)
+int analize_sb(char volume)
 {
 	printf("DEBUG %s\n", volume);
 	struct ext2_super_block es;
@@ -142,6 +142,6 @@ int main(int argc, char *argv[])
 {
 	char *volume = argv[1];
 	printf("DEBUG %s\n", volume);
-	analize_sb();
+	analize_sb(*volume);
 	return 0;
 }
